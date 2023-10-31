@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="porta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\porta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder__medicine_medication_pill_medical_healthcare_59285341" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder__medicine_medication_pill_medical_healthcare_5928534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\clips2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agendaest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Agendaest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="465074_cart_purchase_shopping_basket_buy_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\465074_cart_purchase_shopping_basket_buy_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_handle4_62581(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_handle4_62581(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_medicine-medical-remedy-pills-medicines-healthy-healthcare_and_medical-healthcare-heal_4394836(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_medicine-medical-remedy-pills-medicines-healthy-healthcare_and_medical-healthcare-heal_4394836(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_General_Office_38_3592827" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_General_Office_38_3592827.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enter-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\enter-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_medicine-medical-remedy-pills-medicines-healthy-healthcare_and_medical-healthcare-heal_4394777(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_medicine-medical-remedy-pills-medicines-healthy-healthcare_and_medical-healthcare-heal_4394777(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226565_printer_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226565_printer_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empenho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\empenho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="concorrentes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\concorrentes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="licitacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licitacao.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xxx037-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\xxx037-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-482" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logotipo cientifica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Logotipo cientifica.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\maps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\clips2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="realinhamento2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\realinhamento2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clips22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_010_-_Medication-pills-tablets-prescription-coronavirus_5991790(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_010_-_Medication-pills-tablets-prescription-coronavirus_5991790(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cotacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cotacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1287527_message_email_contact_mail_inbox_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\1287527_message_email_contact_mail_inbox_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016089_watch_add_smartwatch_icon(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\4016089_watch_add_smartwatch_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="painel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\painel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\error.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enter-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\enter-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_notification_error_487851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_notification_error_48785.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3669255_ic_save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3669255_ic_save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\mapa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3017921_appearance_aspect_design_eye_look_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3017921_appearance_aspect_design_eye_look_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stock_export (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\stock_export (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_search-icon-tm_520566" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_search-icon-tm_520566.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_General_Office_38_35928271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_General_Office_38_3592827.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="proposta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\proposta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-circle-blue-322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add-circle-blue-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-circle-blue-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add-circle-blue-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7938_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7938_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6578917_broom_clean_cleaning_housekeeping_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6578917_broom_clean_cleaning_housekeeping_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3669255_ic_save_icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3669255_ic_save_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\clips2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7938_32x322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7938_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\calculadora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2739118_door_entrance_exit_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clips21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016089_watch_add_smartwatch_icon(1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\4016089_watch_add_smartwatch_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Attach.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enter-322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\enter-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logotipo cientifica2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Logotipo cientifica.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vector-cancel-icon-png-image_39916051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\pngtree-vector-cancel-icon-png-image_3991605.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditDocument-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="produto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\produto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2739118_door_entrance_exit_icon4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditDocument-241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_General_Office_38_35928272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_General_Office_38_3592827.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7938_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7938_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_notification_error_48785" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_notification_error_48785.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Processos Licitatórios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Processos Licitatórios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LicitaLivre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\LicitaLivre.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LICITAÇÕES-620x3301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\LICITAÇÕES-620x330.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seo3-35-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\seo3-35-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_513_classroom_class_teacher_room_4212901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_513_classroom_class_teacher_room_4212901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_00-ELASTOFONT-STORE-READY_delivery_2703076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_00-ELASTOFONT-STORE-READY_delivery_2703076.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder__medicine_medication_pill_medical_healthcare_5928534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder__medicine_medication_pill_medical_healthcare_5928534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business1-08-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\business1-08-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016089_watch_add_smartwatch_icon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\4016089_watch_add_smartwatch_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3669255_ic_save_icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3669255_ic_save_icon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="48796_search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48796_search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seo3-35-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\seo3-35-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xxx037-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\xxx037-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_Podium_85539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_Podium_85539.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1814090_delete_garbage_trash_icon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\1814090_delete_garbage_trash_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_star_here_15695" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_star_here_15695.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\EditDocument-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cash_register1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Cash_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-circle-blue-324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add-circle-blue-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3017921_appearance_aspect_design_eye_look_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3017921_appearance_aspect_design_eye_look_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logotipo cientifica3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Logotipo cientifica.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="023_037_broom_clear_clean_tool-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\023_037_broom_clear_clean_tool-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3669255_ic_save_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3669255_ic_save_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="floppy-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\floppy-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\EditDocument-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\2739118_door_entrance_exit_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enviaremail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enviaremail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Zoom_Magnifiyng_Find-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Search_Zoom_Magnifiyng_Find-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\search-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xxx037-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\xxx037-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stock_export (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\stock_export (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_010_-_Medication-pills-tablets-prescription-coronavirus_5991790(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_010_-_Medication-pills-tablets-prescription-coronavirus_5991790(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6578917_broom_clean_cleaning_housekeeping_icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6578917_broom_clean_cleaning_housekeeping_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3994424_cancel_close_delete_reject_remove_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3994424_cancel_close_delete_reject_remove_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_palet02_62584" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_palet02_62584.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGO CIENTIFICA .jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\LOGO CIENTIFICA .jpg.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6578917_broom_clean_cleaning_housekeeping_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6578917_broom_clean_cleaning_housekeeping_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\mapa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LICITAÇÕES-620x330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\LICITAÇÕES-620x330.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cotacao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\cotacao2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LICITAÇÕES-620x3302" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\LICITAÇÕES-620x330.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E-commerce-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\E-commerce-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Business_icon-35-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Business_icon-35-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2739118_door_entrance_exit_icon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vector-cancel-icon-png-image_3991605" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\pngtree-vector-cancel-icon-png-image_3991605.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\clips2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226565_printer_icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226565_printer_icon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="floppy-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\floppy-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2739118_door_entrance_exit_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226565_printer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226565_printer_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dollar_Currency_with_bag-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Dollar_Currency_with_bag-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ok.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016089_watch_add_smartwatch_icon(1)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\4016089_watch_add_smartwatch_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logotipo cientifica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Logotipo cientifica.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1287527_message_email_contact_mail_inbox_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\1287527_message_email_contact_mail_inbox_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_stock_4172394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_stock_4172394.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Zoom_Magnifiyng_Find-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Search_Zoom_Magnifiyng_Find-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_spray-medical-hands-gestures-medication_5859226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_spray-medical-hands-gestures-medication_5859226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-circle-blue-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add-circle-blue-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7952191_door_delivery_service_home_untact_icon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7952191_door_delivery_service_home_untact_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="023_037_broom_clear_clean_tool-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\023_037_broom_clear_clean_tool-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clips2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clips2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cash_register2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Cash_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinheiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinheiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2739118_door_entrance_exit_icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2739118_door_entrance_exit_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add-circle-blue-323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\add-circle-blue-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="floppy-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\floppy-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016089_watch_add_smartwatch_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\4016089_watch_add_smartwatch_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Documentos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_palet02_625841" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_palet02_62584.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226565_printer_icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226565_printer_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_handle4_62581(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_handle4_62581(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recebimento1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\recebimento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7952191_door_delivery_service_home_untact_icon(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7952191_door_delivery_service_home_untact_icon(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3994424_cancel_close_delete_reject_remove_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3994424_cancel_close_delete_reject_remove_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="floppy-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\floppy-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\EditDocument-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3827994_business_cash_management_money_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3827994_business_cash_management_money_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7938_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\7938_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="51415_disk_guardar_save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\51415_disk_guardar_save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_school-02_1989007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\iconfinder_school-02_1989007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cash_register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Cash_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retornocotacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\retornocotacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1814090_delete_garbage_trash_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\1814090_delete_garbage_trash_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recebimento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\recebimento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226565_printer_icon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\226565_printer_icon4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="re" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\licita\re.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-37-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\free-37-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_trash-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\blue_trash-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dainers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\Dainers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Licitacoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Licitacoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditDocument-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="relatorios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\relatorios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="51415_disk_guardar_save_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\51415_disk_guardar_save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\backup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\backup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditDocument-244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\EditDocument-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enter-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\enter-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enter-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagem\enter-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

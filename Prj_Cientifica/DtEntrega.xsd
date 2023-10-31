@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtEntrega" targetNamespace="http://tempuri.org/DtEntrega.xsd" xmlns:mstns="http://tempuri.org/DtEntrega.xsd" xmlns="http://tempuri.org/DtEntrega.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CientificaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CientificaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prj_Cientifica.Properties.Settings.GlobalReference.Default.CientificaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_EntregaTableAdapter" GeneratorDataComponentClassName="View_EntregaTableAdapter" Name="View_Entrega" UserDataComponentName="View_EntregaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="GSDistribuidora.dbo.View_Entrega" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        View_Entrega.*
+FROM            View_Entrega</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="dtrecimento" DataSetColumn="dtrecimento" />
+              <Mapping SourceColumn="nempenho" DataSetColumn="nempenho" />
+              <Mapping SourceColumn="Marca" DataSetColumn="Marca" />
+              <Mapping SourceColumn="nritem" DataSetColumn="nritem" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="razao" DataSetColumn="razao" />
+              <Mapping SourceColumn="qtde" DataSetColumn="qtde" />
+              <Mapping SourceColumn="Faltam" DataSetColumn="Faltam" />
+              <Mapping SourceColumn="preco" DataSetColumn="preco" />
+              <Mapping SourceColumn="dtlimite" DataSetColumn="dtlimite" />
+              <Mapping SourceColumn="nfsaida" DataSetColumn="nfsaida" />
+              <Mapping SourceColumn="Entregues" DataSetColumn="Entregues" />
+              <Mapping SourceColumn="Qtde_Edital" DataSetColumn="Qtde_Edital" />
+              <Mapping SourceColumn="edital" DataSetColumn="edital" />
+              <Mapping SourceColumn="vladitivo" DataSetColumn="vladitivo" />
+              <Mapping SourceColumn="dtentrega" DataSetColumn="dtentrega" />
+              <Mapping SourceColumn="Produto" DataSetColumn="Produto" />
+              <Mapping SourceColumn="PrincipioAtivo" DataSetColumn="PrincipioAtivo" />
+              <Mapping SourceColumn="idedital" DataSetColumn="idedital" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="GSDistribuidora.dbo.View_Entrega" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Entregues, Marca, PrincipioAtivo, Produto, Qtde_Edital, dtentrega, dtlimite, dtrecimento, edital, idedital, nempenho, nfsaida, nritem, preco, qtde, razao, total, vladitivo, Faltam
+FROM            View_Entrega
+WHERE        (nempenho = @nempenho) AND (idedital = @idedital)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="nempenho" ColumnName="nempenho" DataSourceName="GSDistribuidora.dbo.View_Entrega" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nempenho" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="nempenho" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="idedital" ColumnName="idedital" DataSourceName="GSDistribuidora.dbo.View_Entrega" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idedital" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idedital" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Entrega" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="FillBy1" GetMethodModifier="Public" GetMethodName="GetDataBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT Empenho_a_Gerar, Entregues, Marca, Pendencia_Empenho, PrincipioAtivo, Produto, Qtde_Edital, dtentrega, dtlimite, dtrecimento, edital, idedital, nempenho, nfsaida, nritem, preco, qtde, razao, total, vladitivo
+FROM            View_Entrega
+WHERE        (nempenho = @nempenho) AND (idedital = @idedital) AND (nfsaida = @nfsaida)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="nempenho" ColumnName="nempenho" DataSourceName="Dainers.dbo.View_Entrega" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nempenho" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="nempenho" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="idedital" ColumnName="idedital" DataSourceName="Dainers.dbo.View_Entrega" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idedital" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idedital" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="nfsaida" ColumnName="nfsaida" DataSourceName="Dainers.dbo.View_Entrega" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@nfsaida" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="nfsaida" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtEntrega" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DtEntrega" msprop:Generator_UserDSName="DtEntrega">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Entrega" msprop:Generator_TableClassName="View_EntregaDataTable" msprop:Generator_TableVarName="tableView_Entrega" msprop:Generator_TablePropName="View_Entrega" msprop:Generator_RowDeletingName="View_EntregaRowDeleting" msprop:Generator_RowChangingName="View_EntregaRowChanging" msprop:Generator_RowEvHandlerName="View_EntregaRowChangeEventHandler" msprop:Generator_RowDeletedName="View_EntregaRowDeleted" msprop:Generator_UserTableName="View_Entrega" msprop:Generator_RowChangedName="View_EntregaRowChanged" msprop:Generator_RowEvArgName="View_EntregaRowChangeEvent" msprop:Generator_RowClassName="View_EntregaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dtrecimento" msprop:Generator_ColumnVarNameInTable="columndtrecimento" msprop:Generator_ColumnPropNameInRow="dtrecimento" msprop:Generator_ColumnPropNameInTable="dtrecimentoColumn" msprop:Generator_UserColumnName="dtrecimento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nempenho" msprop:Generator_ColumnVarNameInTable="columnnempenho" msprop:Generator_ColumnPropNameInRow="nempenho" msprop:Generator_ColumnPropNameInTable="nempenhoColumn" msprop:Generator_UserColumnName="nempenho" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marca" msprop:Generator_ColumnVarNameInTable="columnMarca" msprop:Generator_ColumnPropNameInRow="Marca" msprop:Generator_ColumnPropNameInTable="MarcaColumn" msprop:Generator_UserColumnName="Marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nritem" msprop:Generator_ColumnVarNameInTable="columnnritem" msprop:Generator_ColumnPropNameInRow="nritem" msprop:Generator_ColumnPropNameInTable="nritemColumn" msprop:Generator_UserColumnName="nritem" type="xs:int" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+              <xs:element name="razao" msprop:Generator_ColumnVarNameInTable="columnrazao" msprop:Generator_ColumnPropNameInRow="razao" msprop:Generator_ColumnPropNameInTable="razaoColumn" msprop:Generator_UserColumnName="razao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qtde" msprop:Generator_ColumnVarNameInTable="columnqtde" msprop:Generator_ColumnPropNameInRow="qtde" msprop:Generator_ColumnPropNameInTable="qtdeColumn" msprop:Generator_UserColumnName="qtde" type="xs:int" minOccurs="0" />
+              <xs:element name="Faltam" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFaltam" msprop:Generator_ColumnPropNameInRow="Faltam" msprop:Generator_ColumnPropNameInTable="FaltamColumn" msprop:Generator_UserColumnName="Faltam" type="xs:int" minOccurs="0" />
+              <xs:element name="preco" msprop:Generator_ColumnVarNameInTable="columnpreco" msprop:Generator_ColumnPropNameInRow="preco" msprop:Generator_ColumnPropNameInTable="precoColumn" msprop:Generator_UserColumnName="preco" type="xs:double" minOccurs="0" />
+              <xs:element name="dtlimite" msprop:Generator_ColumnVarNameInTable="columndtlimite" msprop:Generator_ColumnPropNameInRow="dtlimite" msprop:Generator_ColumnPropNameInTable="dtlimiteColumn" msprop:Generator_UserColumnName="dtlimite" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nfsaida" msprop:Generator_ColumnVarNameInTable="columnnfsaida" msprop:Generator_ColumnPropNameInRow="nfsaida" msprop:Generator_ColumnPropNameInTable="nfsaidaColumn" msprop:Generator_UserColumnName="nfsaida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Entregues" msprop:Generator_ColumnVarNameInTable="columnEntregues" msprop:Generator_ColumnPropNameInRow="Entregues" msprop:Generator_ColumnPropNameInTable="EntreguesColumn" msprop:Generator_UserColumnName="Entregues" type="xs:int" minOccurs="0" />
+              <xs:element name="Qtde_Edital" msprop:Generator_ColumnVarNameInTable="columnQtde_Edital" msprop:Generator_ColumnPropNameInRow="Qtde_Edital" msprop:Generator_ColumnPropNameInTable="Qtde_EditalColumn" msprop:Generator_UserColumnName="Qtde_Edital" type="xs:int" minOccurs="0" />
+              <xs:element name="edital" msprop:Generator_ColumnVarNameInTable="columnedital" msprop:Generator_ColumnPropNameInRow="edital" msprop:Generator_ColumnPropNameInTable="editalColumn" msprop:Generator_UserColumnName="edital" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vladitivo" msprop:Generator_ColumnVarNameInTable="columnvladitivo" msprop:Generator_ColumnPropNameInRow="vladitivo" msprop:Generator_ColumnPropNameInTable="vladitivoColumn" msprop:Generator_UserColumnName="vladitivo" type="xs:double" minOccurs="0" />
+              <xs:element name="dtentrega" msprop:Generator_ColumnVarNameInTable="columndtentrega" msprop:Generator_ColumnPropNameInRow="dtentrega" msprop:Generator_ColumnPropNameInTable="dtentregaColumn" msprop:Generator_UserColumnName="dtentrega" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Produto" msprop:Generator_ColumnVarNameInTable="columnProduto" msprop:Generator_ColumnPropNameInRow="Produto" msprop:Generator_ColumnPropNameInTable="ProdutoColumn" msprop:Generator_UserColumnName="Produto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrincipioAtivo" msprop:Generator_ColumnVarNameInTable="columnPrincipioAtivo" msprop:Generator_ColumnPropNameInRow="PrincipioAtivo" msprop:Generator_ColumnPropNameInTable="PrincipioAtivoColumn" msprop:Generator_UserColumnName="PrincipioAtivo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idedital" msprop:Generator_ColumnVarNameInTable="columnidedital" msprop:Generator_ColumnPropNameInRow="idedital" msprop:Generator_ColumnPropNameInTable="ideditalColumn" msprop:Generator_UserColumnName="idedital" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

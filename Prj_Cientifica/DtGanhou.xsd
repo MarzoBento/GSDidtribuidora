@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtGanhou" targetNamespace="http://tempuri.org/DtGanhou.xsd" xmlns:mstns="http://tempuri.org/DtGanhou.xsd" xmlns="http://tempuri.org/DtGanhou.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CientificaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CientificaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prj_Cientifica.Properties.Settings.GlobalReference.Default.CientificaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_GanhouTableAdapter" GeneratorDataComponentClassName="View_GanhouTableAdapter" Name="View_Ganhou" UserDataComponentName="View_GanhouTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Ganhou" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Produto, Orgao, uf, Vl_Venda, Vl_Total, ganhou, Vl_Custo, Fornecedor, qtde, idproduto, idcliente, idfornecedor, NEdital, edital, DtVigencia, vigcontratoata, dtabertura, casasdecimais, margemfinal
+FROM            View_Ganhou
+WHERE        (ganhou = 'SIM')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Produto" DataSetColumn="Produto" />
+              <Mapping SourceColumn="Fornecedor" DataSetColumn="Fornecedor" />
+              <Mapping SourceColumn="Orgao" DataSetColumn="Orgao" />
+              <Mapping SourceColumn="Vl_Venda" DataSetColumn="Vl_Venda" />
+              <Mapping SourceColumn="Vl_Total" DataSetColumn="Vl_Total" />
+              <Mapping SourceColumn="uf" DataSetColumn="uf" />
+              <Mapping SourceColumn="ganhou" DataSetColumn="ganhou" />
+              <Mapping SourceColumn="qtde" DataSetColumn="qtde" />
+              <Mapping SourceColumn="idproduto" DataSetColumn="idproduto" />
+              <Mapping SourceColumn="idcliente" DataSetColumn="idcliente" />
+              <Mapping SourceColumn="idfornecedor" DataSetColumn="idfornecedor" />
+              <Mapping SourceColumn="NEdital" DataSetColumn="NEdital" />
+              <Mapping SourceColumn="DtVigencia" DataSetColumn="DtVigencia" />
+              <Mapping SourceColumn="vigcontratoata" DataSetColumn="vigcontratoata" />
+              <Mapping SourceColumn="dtabertura" DataSetColumn="dtabertura" />
+              <Mapping SourceColumn="casasdecimais" DataSetColumn="casasdecimais" />
+              <Mapping SourceColumn="Vl_Custo" DataSetColumn="Vl_Custo" />
+              <Mapping SourceColumn="edital" DataSetColumn="edital" />
+              <Mapping SourceColumn="margemfinal" DataSetColumn="margemfinal" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Ganhou" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DtVigencia, Fornecedor, NEdital, Orgao, Produto, Vl_Custo, Vl_Total, Vl_Venda, casasdecimais, dtabertura, edital, ganhou, idcliente, idfornecedor, idproduto, margemfinal, qtde, uf, vigcontratoata FROM View_Ganhou WHERE (idproduto = @idproduto) AND (ganhou = 'SIM')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idproduto" ColumnName="idproduto" DataSourceName="Dainers.dbo.View_Ganhou" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idproduto" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idproduto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Ganhou" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="FillBy1" GetMethodModifier="Public" GetMethodName="GetDataBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DtVigencia, Fornecedor, NEdital, Orgao, Produto, Vl_Custo, Vl_Total, Vl_Venda, casasdecimais, dtabertura, edital, ganhou, idcliente, idfornecedor, idproduto, margemfinal, qtde, uf, vigcontratoata FROM View_Ganhou WHERE (idfornecedor = @idfornecedor) AND (ganhou = 'SIM')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idfornecedor" ColumnName="idfornecedor" DataSourceName="Dainers.dbo.View_Ganhou" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idfornecedor" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idfornecedor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Ganhou" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="FillBy2" GetMethodModifier="Public" GetMethodName="GetDataBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DtVigencia, Fornecedor, NEdital, Orgao, Produto, Vl_Custo, Vl_Total, Vl_Venda, casasdecimais, dtabertura, edital, ganhou, idcliente, idfornecedor, idproduto, margemfinal, qtde, uf, vigcontratoata FROM View_Ganhou WHERE (ganhou = 'SIM') AND (idcliente = @idcliente)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idcliente" ColumnName="idcliente" DataSourceName="Dainers.dbo.View_Ganhou" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idcliente" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idcliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Ganhou" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy3" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy3" GeneratorSourceName="FillBy3" GetMethodModifier="Public" GetMethodName="GetDataBy3" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBy3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DtVigencia, Fornecedor, NEdital, Orgao, Produto, Vl_Custo, Vl_Total, Vl_Venda, casasdecimais, dtabertura, edital, ganhou, idcliente, idfornecedor, idproduto, margemfinal, qtde, uf, vigcontratoata FROM View_Ganhou WHERE (ganhou = 'SIM') AND (uf = @uf)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="uf" ColumnName="uf" DataSourceName="Dainers.dbo.View_Ganhou" DataTypeServer="nchar(3)" DbType="String" Direction="Input" ParameterName="@uf" Precision="0" ProviderType="NChar" Scale="0" Size="3" SourceColumn="uf" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtGanhou" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DtGanhou" msprop:Generator_UserDSName="DtGanhou">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Ganhou" msprop:Generator_TableClassName="View_GanhouDataTable" msprop:Generator_TableVarName="tableView_Ganhou" msprop:Generator_RowChangedName="View_GanhouRowChanged" msprop:Generator_TablePropName="View_Ganhou" msprop:Generator_RowDeletingName="View_GanhouRowDeleting" msprop:Generator_RowChangingName="View_GanhouRowChanging" msprop:Generator_RowEvHandlerName="View_GanhouRowChangeEventHandler" msprop:Generator_RowDeletedName="View_GanhouRowDeleted" msprop:Generator_RowClassName="View_GanhouRow" msprop:Generator_UserTableName="View_Ganhou" msprop:Generator_RowEvArgName="View_GanhouRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Produto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProduto" msprop:Generator_ColumnPropNameInRow="Produto" msprop:Generator_ColumnPropNameInTable="ProdutoColumn" msprop:Generator_UserColumnName="Produto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fornecedor" msprop:Generator_ColumnVarNameInTable="columnFornecedor" msprop:Generator_ColumnPropNameInRow="Fornecedor" msprop:Generator_ColumnPropNameInTable="FornecedorColumn" msprop:Generator_UserColumnName="Fornecedor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Orgao" msprop:Generator_ColumnVarNameInTable="columnOrgao" msprop:Generator_ColumnPropNameInRow="Orgao" msprop:Generator_ColumnPropNameInTable="OrgaoColumn" msprop:Generator_UserColumnName="Orgao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vl_Venda" msprop:Generator_ColumnVarNameInTable="columnVl_Venda" msprop:Generator_ColumnPropNameInRow="Vl_Venda" msprop:Generator_ColumnPropNameInTable="Vl_VendaColumn" msprop:Generator_UserColumnName="Vl_Venda" type="xs:double" minOccurs="0" />
+              <xs:element name="Vl_Total" msprop:Generator_ColumnVarNameInTable="columnVl_Total" msprop:Generator_ColumnPropNameInRow="Vl_Total" msprop:Generator_ColumnPropNameInTable="Vl_TotalColumn" msprop:Generator_UserColumnName="Vl_Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="uf" msprop:Generator_ColumnVarNameInTable="columnuf" msprop:Generator_ColumnPropNameInRow="uf" msprop:Generator_ColumnPropNameInTable="ufColumn" msprop:Generator_UserColumnName="uf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ganhou" msprop:Generator_ColumnVarNameInTable="columnganhou" msprop:Generator_ColumnPropNameInRow="ganhou" msprop:Generator_ColumnPropNameInTable="ganhouColumn" msprop:Generator_UserColumnName="ganhou" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qtde" msprop:Generator_ColumnVarNameInTable="columnqtde" msprop:Generator_ColumnPropNameInRow="qtde" msprop:Generator_ColumnPropNameInTable="qtdeColumn" msprop:Generator_UserColumnName="qtde" type="xs:int" minOccurs="0" />
+              <xs:element name="idproduto" msprop:Generator_ColumnVarNameInTable="columnidproduto" msprop:Generator_ColumnPropNameInRow="idproduto" msprop:Generator_ColumnPropNameInTable="idprodutoColumn" msprop:Generator_UserColumnName="idproduto" type="xs:int" />
+              <xs:element name="idcliente" msprop:Generator_ColumnVarNameInTable="columnidcliente" msprop:Generator_ColumnPropNameInRow="idcliente" msprop:Generator_ColumnPropNameInTable="idclienteColumn" msprop:Generator_UserColumnName="idcliente" type="xs:int" />
+              <xs:element name="idfornecedor" msprop:Generator_ColumnVarNameInTable="columnidfornecedor" msprop:Generator_ColumnPropNameInRow="idfornecedor" msprop:Generator_ColumnPropNameInTable="idfornecedorColumn" msprop:Generator_UserColumnName="idfornecedor" type="xs:int" />
+              <xs:element name="NEdital" msprop:Generator_ColumnVarNameInTable="columnNEdital" msprop:Generator_ColumnPropNameInRow="NEdital" msprop:Generator_ColumnPropNameInTable="NEditalColumn" msprop:Generator_UserColumnName="NEdital" type="xs:int" minOccurs="0" />
+              <xs:element name="DtVigencia" msprop:Generator_ColumnVarNameInTable="columnDtVigencia" msprop:Generator_ColumnPropNameInRow="DtVigencia" msprop:Generator_ColumnPropNameInTable="DtVigenciaColumn" msprop:Generator_UserColumnName="DtVigencia" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="vigcontratoata" msprop:Generator_ColumnVarNameInTable="columnvigcontratoata" msprop:Generator_ColumnPropNameInRow="vigcontratoata" msprop:Generator_ColumnPropNameInTable="vigcontratoataColumn" msprop:Generator_UserColumnName="vigcontratoata" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtabertura" msprop:Generator_ColumnVarNameInTable="columndtabertura" msprop:Generator_ColumnPropNameInRow="dtabertura" msprop:Generator_ColumnPropNameInTable="dtaberturaColumn" msprop:Generator_UserColumnName="dtabertura" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="casasdecimais" msprop:Generator_ColumnVarNameInTable="columncasasdecimais" msprop:Generator_ColumnPropNameInRow="casasdecimais" msprop:Generator_ColumnPropNameInTable="casasdecimaisColumn" msprop:Generator_UserColumnName="casasdecimais" type="xs:int" minOccurs="0" />
+              <xs:element name="Vl_Custo" msprop:Generator_ColumnVarNameInTable="columnVl_Custo" msprop:Generator_ColumnPropNameInRow="Vl_Custo" msprop:Generator_ColumnPropNameInTable="Vl_CustoColumn" msprop:Generator_UserColumnName="Vl_Custo" type="xs:double" minOccurs="0" />
+              <xs:element name="edital" msprop:Generator_ColumnVarNameInTable="columnedital" msprop:Generator_ColumnPropNameInRow="edital" msprop:Generator_ColumnPropNameInTable="editalColumn" msprop:Generator_UserColumnName="edital" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="margemfinal" msprop:Generator_ColumnVarNameInTable="columnmargemfinal" msprop:Generator_ColumnPropNameInRow="margemfinal" msprop:Generator_ColumnPropNameInTable="margemfinalColumn" msprop:Generator_UserColumnName="margemfinal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

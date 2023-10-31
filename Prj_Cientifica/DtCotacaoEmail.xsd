@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtCotacaoEmail" targetNamespace="http://tempuri.org/DtCotacaoEmail.xsd" xmlns:mstns="http://tempuri.org/DtCotacaoEmail.xsd" xmlns="http://tempuri.org/DtCotacaoEmail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CientificaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CientificaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prj_Cientifica.Properties.Settings.GlobalReference.Default.CientificaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Cotacao_EmailTableAdapter" GeneratorDataComponentClassName="View_Cotacao_EmailTableAdapter" Name="View_Cotacao_Email" UserDataComponentName="View_Cotacao_EmailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Cotacao_Email" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Produto, Lote, Item, Unidade, Qtde, Apresentação, Desconto, Repasse, I_P_I, Frete, Icms, Preço_Total, idfornecedor, nlicitacao, idedital, statuscotacao
+FROM            View_Cotacao_Email</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Produto" DataSetColumn="Produto" />
+              <Mapping SourceColumn="Lote" DataSetColumn="Lote" />
+              <Mapping SourceColumn="Item" DataSetColumn="Item" />
+              <Mapping SourceColumn="Unidade" DataSetColumn="Unidade" />
+              <Mapping SourceColumn="Qtde" DataSetColumn="Qtde" />
+              <Mapping SourceColumn="Apresentação" DataSetColumn="Apresentação" />
+              <Mapping SourceColumn="idfornecedor" DataSetColumn="idfornecedor" />
+              <Mapping SourceColumn="nlicitacao" DataSetColumn="nlicitacao" />
+              <Mapping SourceColumn="idedital" DataSetColumn="idedital" />
+              <Mapping SourceColumn="statuscotacao" DataSetColumn="statuscotacao" />
+              <Mapping SourceColumn="Desconto" DataSetColumn="Desconto" />
+              <Mapping SourceColumn="Repasse" DataSetColumn="Repasse" />
+              <Mapping SourceColumn="Frete" DataSetColumn="Frete" />
+              <Mapping SourceColumn="Icms" DataSetColumn="Icms" />
+              <Mapping SourceColumn="I_P_I" DataSetColumn="I_P_I" />
+              <Mapping SourceColumn="Preço_Total" DataSetColumn="Preço_Total" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Dainers.dbo.View_Cotacao_Email" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Apresentação, Desconto, Frete, I_P_I, Icms, Item, Lote, Preço_Total, Produto, Qtde, Repasse, Unidade, idedital, idfornecedor, nlicitacao, statuscotacao
+FROM            View_Cotacao_Email
+WHERE        (idfornecedor = @idfornecedor) AND (idedital = @idedital) AND (statuscotacao = 'SIM')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idfornecedor" ColumnName="idfornecedor" DataSourceName="Dainers.dbo.View_Cotacao_Email" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idfornecedor" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idfornecedor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="idedital" ColumnName="idedital" DataSourceName="Dainers.dbo.View_Cotacao_Email" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idedital" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idedital" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtCotacaoEmail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DtCotacaoEmail" msprop:Generator_UserDSName="DtCotacaoEmail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Cotacao_Email" msprop:Generator_TableClassName="View_Cotacao_EmailDataTable" msprop:Generator_TableVarName="tableView_Cotacao_Email" msprop:Generator_TablePropName="View_Cotacao_Email" msprop:Generator_RowDeletingName="View_Cotacao_EmailRowDeleting" msprop:Generator_RowChangingName="View_Cotacao_EmailRowChanging" msprop:Generator_RowEvHandlerName="View_Cotacao_EmailRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Cotacao_EmailRowDeleted" msprop:Generator_UserTableName="View_Cotacao_Email" msprop:Generator_RowChangedName="View_Cotacao_EmailRowChanged" msprop:Generator_RowEvArgName="View_Cotacao_EmailRowChangeEvent" msprop:Generator_RowClassName="View_Cotacao_EmailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Produto" msprop:Generator_ColumnVarNameInTable="columnProduto" msprop:Generator_ColumnPropNameInRow="Produto" msprop:Generator_ColumnPropNameInTable="ProdutoColumn" msprop:Generator_UserColumnName="Produto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lote" msprop:Generator_ColumnVarNameInTable="columnLote" msprop:Generator_ColumnPropNameInRow="Lote" msprop:Generator_ColumnPropNameInTable="LoteColumn" msprop:Generator_UserColumnName="Lote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" type="xs:int" minOccurs="0" />
+              <xs:element name="Unidade" msprop:Generator_ColumnVarNameInTable="columnUnidade" msprop:Generator_ColumnPropNameInRow="Unidade" msprop:Generator_ColumnPropNameInTable="UnidadeColumn" msprop:Generator_UserColumnName="Unidade">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qtde" msprop:Generator_ColumnVarNameInTable="columnQtde" msprop:Generator_ColumnPropNameInRow="Qtde" msprop:Generator_ColumnPropNameInTable="QtdeColumn" msprop:Generator_UserColumnName="Qtde" type="xs:int" minOccurs="0" />
+              <xs:element name="Apresentação" msprop:Generator_ColumnVarNameInTable="columnApresentação" msprop:Generator_ColumnPropNameInRow="Apresentação" msprop:Generator_ColumnPropNameInTable="ApresentaçãoColumn" msprop:Generator_UserColumnName="Apresentação" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idfornecedor" msprop:Generator_ColumnVarNameInTable="columnidfornecedor" msprop:Generator_ColumnPropNameInRow="idfornecedor" msprop:Generator_ColumnPropNameInTable="idfornecedorColumn" msprop:Generator_UserColumnName="idfornecedor" type="xs:int" />
+              <xs:element name="nlicitacao" msprop:Generator_ColumnVarNameInTable="columnnlicitacao" msprop:Generator_ColumnPropNameInRow="nlicitacao" msprop:Generator_ColumnPropNameInTable="nlicitacaoColumn" msprop:Generator_UserColumnName="nlicitacao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idedital" msprop:Generator_ColumnVarNameInTable="columnidedital" msprop:Generator_ColumnPropNameInRow="idedital" msprop:Generator_ColumnPropNameInTable="ideditalColumn" msprop:Generator_UserColumnName="idedital" type="xs:int" minOccurs="0" />
+              <xs:element name="statuscotacao" msprop:Generator_ColumnVarNameInTable="columnstatuscotacao" msprop:Generator_ColumnPropNameInRow="statuscotacao" msprop:Generator_ColumnPropNameInTable="statuscotacaoColumn" msprop:Generator_UserColumnName="statuscotacao">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Desconto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDesconto" msprop:Generator_ColumnPropNameInRow="Desconto" msprop:Generator_ColumnPropNameInTable="DescontoColumn" msprop:Generator_UserColumnName="Desconto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Repasse" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRepasse" msprop:Generator_ColumnPropNameInRow="Repasse" msprop:Generator_ColumnPropNameInTable="RepasseColumn" msprop:Generator_UserColumnName="Repasse" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Frete" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFrete" msprop:Generator_ColumnPropNameInRow="Frete" msprop:Generator_ColumnPropNameInTable="FreteColumn" msprop:Generator_UserColumnName="Frete" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Icms" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIcms" msprop:Generator_ColumnPropNameInRow="Icms" msprop:Generator_ColumnPropNameInTable="IcmsColumn" msprop:Generator_UserColumnName="Icms" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="I_P_I" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnI_P_I" msprop:Generator_ColumnPropNameInRow="I_P_I" msprop:Generator_ColumnPropNameInTable="I_P_IColumn" msprop:Generator_UserColumnName="I_P_I" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Preço_Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPreço_Total" msprop:Generator_ColumnPropNameInRow="Preço_Total" msprop:Generator_ColumnPropNameInTable="Preço_TotalColumn" msprop:Generator_UserColumnName="Preço_Total" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Cotacao_Email" />
+      <xs:field xpath="mstns:idfornecedor" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

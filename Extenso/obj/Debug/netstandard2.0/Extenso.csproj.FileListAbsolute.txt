@@ -1,0 +1,9 @@
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.csproj.CoreCompileInputs.cache
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.AssemblyInfoInputs.cache
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.AssemblyInfo.cs
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\bin\Debug\netstandard2.0\Extenso.deps.json
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\bin\Debug\netstandard2.0\Extenso.dll
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\bin\Debug\netstandard2.0\Extenso.pdb
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.dll
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.pdb
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso\obj\Debug\netstandard2.0\Extenso.csprojAssemblyReference.cache

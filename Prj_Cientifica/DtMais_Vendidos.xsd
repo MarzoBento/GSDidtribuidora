@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtMais_Vendidos" targetNamespace="http://tempuri.org/DtMais_Vendidos.xsd" xmlns:mstns="http://tempuri.org/DtMais_Vendidos.xsd" xmlns="http://tempuri.org/DtMais_Vendidos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CientificaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CientificaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prj_Cientifica.Properties.Settings.GlobalReference.Default.CientificaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Mais VendidosTableAdapter" GeneratorDataComponentClassName="View_Mais_VendidosTableAdapter" Name="View_Mais Vendidos" UserDataComponentName="View_Mais VendidosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="Cientifica.dbo.[View_Mais Vendidos]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nome, Marca, Qtde_Produto, dtentrega FROM dbo.[View_Mais Vendidos]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nome" DataSetColumn="nome" />
+              <Mapping SourceColumn="Marca" DataSetColumn="Marca" />
+              <Mapping SourceColumn="Qtde_Produto" DataSetColumn="Qtde_Produto" />
+              <Mapping SourceColumn="dtentrega" DataSetColumn="dtentrega" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtMais_Vendidos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DtMais_Vendidos" msprop:Generator_UserDSName="DtMais_Vendidos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Mais_x0020_Vendidos" msprop:Generator_TableClassName="View_Mais_VendidosDataTable" msprop:Generator_TableVarName="tableView_Mais_Vendidos" msprop:Generator_TablePropName="View_Mais_Vendidos" msprop:Generator_RowDeletingName="View_Mais_VendidosRowDeleting" msprop:Generator_RowChangingName="View_Mais_VendidosRowChanging" msprop:Generator_RowEvHandlerName="View_Mais_VendidosRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Mais_VendidosRowDeleted" msprop:Generator_UserTableName="View_Mais Vendidos" msprop:Generator_RowChangedName="View_Mais_VendidosRowChanged" msprop:Generator_RowEvArgName="View_Mais_VendidosRowChangeEvent" msprop:Generator_RowClassName="View_Mais_VendidosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marca" msprop:Generator_ColumnVarNameInTable="columnMarca" msprop:Generator_ColumnPropNameInRow="Marca" msprop:Generator_ColumnPropNameInTable="MarcaColumn" msprop:Generator_UserColumnName="Marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qtde_Produto" msprop:Generator_ColumnVarNameInTable="columnQtde_Produto" msprop:Generator_ColumnPropNameInRow="Qtde_Produto" msprop:Generator_ColumnPropNameInTable="Qtde_ProdutoColumn" msprop:Generator_UserColumnName="Qtde_Produto" type="xs:int" minOccurs="0" />
+              <xs:element name="dtentrega" msprop:Generator_ColumnVarNameInTable="columndtentrega" msprop:Generator_ColumnPropNameInRow="dtentrega" msprop:Generator_ColumnPropNameInTable="dtentregaColumn" msprop:Generator_UserColumnName="dtentrega" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

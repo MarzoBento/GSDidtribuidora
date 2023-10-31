@@ -1,0 +1,2 @@
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso_Numero\obj\Debug\Extenso_Numero.csprojAssemblyReference.cache
+C:\SISTEMAS\DAINERS\Dainers\Prj_Cientifica\Extenso_Numero\obj\Debug\Extenso_Numero.csproj.CoreCompileInputs.cache

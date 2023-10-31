@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DtPendenciasPorEdital" targetNamespace="http://tempuri.org/DtPendenciasPorEdital.xsd" xmlns:mstns="http://tempuri.org/DtPendenciasPorEdital.xsd" xmlns="http://tempuri.org/DtPendenciasPorEdital.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CientificaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CientificaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prj_Cientifica.Properties.Settings.GlobalReference.Default.CientificaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PendenciasTableAdapter" GeneratorDataComponentClassName="View_PendenciasTableAdapter" Name="View_Pendencias" UserDataComponentName="View_PendenciasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="GSDistribuidora.dbo.View_Pendencias" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        itemedital, Descrição, Marca, item, lote, empenho, Preço, Qdte_Empenho, total, edital, Qtd_Edital, idempenhoitems, Aditivo, idmarca, idempenho, Pendente, vladitivo, Entregues, idproduto, idprincipio, Qtde_Edital, Cliente, 
+                         nempenho, idedital
+FROM            View_Pendencias</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="itemedital" DataSetColumn="itemedital" />
+              <Mapping SourceColumn="Descrição" DataSetColumn="Descrição" />
+              <Mapping SourceColumn="Marca" DataSetColumn="Marca" />
+              <Mapping SourceColumn="item" DataSetColumn="item" />
+              <Mapping SourceColumn="lote" DataSetColumn="lote" />
+              <Mapping SourceColumn="empenho" DataSetColumn="empenho" />
+              <Mapping SourceColumn="Preço" DataSetColumn="Preço" />
+              <Mapping SourceColumn="Qdte_Empenho" DataSetColumn="Qdte_Empenho" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="edital" DataSetColumn="edital" />
+              <Mapping SourceColumn="Qtd_Edital" DataSetColumn="Qtd_Edital" />
+              <Mapping SourceColumn="idempenhoitems" DataSetColumn="idempenhoitems" />
+              <Mapping SourceColumn="Aditivo" DataSetColumn="Aditivo" />
+              <Mapping SourceColumn="idmarca" DataSetColumn="idmarca" />
+              <Mapping SourceColumn="idempenho" DataSetColumn="idempenho" />
+              <Mapping SourceColumn="Pendente" DataSetColumn="Pendente" />
+              <Mapping SourceColumn="vladitivo" DataSetColumn="vladitivo" />
+              <Mapping SourceColumn="Entregues" DataSetColumn="Entregues" />
+              <Mapping SourceColumn="idproduto" DataSetColumn="idproduto" />
+              <Mapping SourceColumn="idprincipio" DataSetColumn="idprincipio" />
+              <Mapping SourceColumn="Qtde_Edital" DataSetColumn="Qtde_Edital" />
+              <Mapping SourceColumn="Cliente" DataSetColumn="Cliente" />
+              <Mapping SourceColumn="nempenho" DataSetColumn="nempenho" />
+              <Mapping SourceColumn="idedital" DataSetColumn="idedital" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="CientificaConnectionString (Settings)" DbObjectName="GSDistribuidora.dbo.View_Pendencias" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Aditivo, Cliente, Descrição, Entregues, Marca, Pendente, Preço, Qdte_Empenho, Qtd_Edital, Qtde_Edital, edital, empenho, idedital, idempenho, idempenhoitems, idmarca, idprincipio, idproduto, item, itemedital, lote, nempenho, total, vladitivo FROM View_Pendencias WHERE (idedital = @idedital)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="idedital" ColumnName="idedital" DataSourceName="GSDistribuidora.dbo.View_Pendencias" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idedital" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idedital" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DtPendenciasPorEdital" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DtPendenciasPorEdital" msprop:Generator_UserDSName="DtPendenciasPorEdital">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Pendencias" msprop:Generator_TableClassName="View_PendenciasDataTable" msprop:Generator_TableVarName="tableView_Pendencias" msprop:Generator_TablePropName="View_Pendencias" msprop:Generator_RowDeletingName="View_PendenciasRowDeleting" msprop:Generator_RowChangingName="View_PendenciasRowChanging" msprop:Generator_RowEvHandlerName="View_PendenciasRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PendenciasRowDeleted" msprop:Generator_UserTableName="View_Pendencias" msprop:Generator_RowChangedName="View_PendenciasRowChanged" msprop:Generator_RowEvArgName="View_PendenciasRowChangeEvent" msprop:Generator_RowClassName="View_PendenciasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="itemedital" msprop:Generator_ColumnVarNameInTable="columnitemedital" msprop:Generator_ColumnPropNameInRow="itemedital" msprop:Generator_ColumnPropNameInTable="itemeditalColumn" msprop:Generator_UserColumnName="itemedital" type="xs:int" minOccurs="0" />
+              <xs:element name="Descrição" msprop:Generator_ColumnVarNameInTable="columnDescrição" msprop:Generator_ColumnPropNameInRow="Descrição" msprop:Generator_ColumnPropNameInTable="DescriçãoColumn" msprop:Generator_UserColumnName="Descrição" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marca" msprop:Generator_ColumnVarNameInTable="columnMarca" msprop:Generator_ColumnPropNameInRow="Marca" msprop:Generator_ColumnPropNameInTable="MarcaColumn" msprop:Generator_UserColumnName="Marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:int" minOccurs="0" />
+              <xs:element name="lote" msprop:Generator_ColumnVarNameInTable="columnlote" msprop:Generator_ColumnPropNameInRow="lote" msprop:Generator_ColumnPropNameInTable="loteColumn" msprop:Generator_UserColumnName="lote" type="xs:int" minOccurs="0" />
+              <xs:element name="empenho" msprop:Generator_ColumnVarNameInTable="columnempenho" msprop:Generator_ColumnPropNameInRow="empenho" msprop:Generator_ColumnPropNameInTable="empenhoColumn" msprop:Generator_UserColumnName="empenho">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Preço" msprop:Generator_ColumnVarNameInTable="columnPreço" msprop:Generator_ColumnPropNameInRow="Preço" msprop:Generator_ColumnPropNameInTable="PreçoColumn" msprop:Generator_UserColumnName="Preço" type="xs:double" minOccurs="0" />
+              <xs:element name="Qdte_Empenho" msprop:Generator_ColumnVarNameInTable="columnQdte_Empenho" msprop:Generator_ColumnPropNameInRow="Qdte_Empenho" msprop:Generator_ColumnPropNameInTable="Qdte_EmpenhoColumn" msprop:Generator_UserColumnName="Qdte_Empenho" type="xs:int" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+              <xs:element name="edital" msprop:Generator_ColumnVarNameInTable="columnedital" msprop:Generator_ColumnPropNameInRow="edital" msprop:Generator_ColumnPropNameInTable="editalColumn" msprop:Generator_UserColumnName="edital" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qtd_Edital" msprop:Generator_ColumnVarNameInTable="columnQtd_Edital" msprop:Generator_ColumnPropNameInRow="Qtd_Edital" msprop:Generator_ColumnPropNameInTable="Qtd_EditalColumn" msprop:Generator_UserColumnName="Qtd_Edital" type="xs:int" minOccurs="0" />
+              <xs:element name="idempenhoitems" msprop:Generator_ColumnVarNameInTable="columnidempenhoitems" msprop:Generator_ColumnPropNameInRow="idempenhoitems" msprop:Generator_ColumnPropNameInTable="idempenhoitemsColumn" msprop:Generator_UserColumnName="idempenhoitems" type="xs:int" />
+              <xs:element name="Aditivo" msprop:Generator_ColumnVarNameInTable="columnAditivo" msprop:Generator_ColumnPropNameInRow="Aditivo" msprop:Generator_ColumnPropNameInTable="AditivoColumn" msprop:Generator_UserColumnName="Aditivo" type="xs:double" minOccurs="0" />
+              <xs:element name="idmarca" msprop:Generator_ColumnVarNameInTable="columnidmarca" msprop:Generator_ColumnPropNameInRow="idmarca" msprop:Generator_ColumnPropNameInTable="idmarcaColumn" msprop:Generator_UserColumnName="idmarca" type="xs:int" />
+              <xs:element name="idempenho" msprop:Generator_ColumnVarNameInTable="columnidempenho" msprop:Generator_ColumnPropNameInRow="idempenho" msprop:Generator_ColumnPropNameInTable="idempenhoColumn" msprop:Generator_UserColumnName="idempenho" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendente" msprop:Generator_ColumnPropNameInRow="Pendente" msprop:Generator_ColumnPropNameInTable="PendenteColumn" msprop:Generator_UserColumnName="Pendente" type="xs:int" minOccurs="0" />
+              <xs:element name="vladitivo" msprop:Generator_ColumnVarNameInTable="columnvladitivo" msprop:Generator_ColumnPropNameInRow="vladitivo" msprop:Generator_ColumnPropNameInTable="vladitivoColumn" msprop:Generator_UserColumnName="vladitivo" type="xs:double" minOccurs="0" />
+              <xs:element name="Entregues" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntregues" msprop:Generator_ColumnPropNameInRow="Entregues" msprop:Generator_ColumnPropNameInTable="EntreguesColumn" msprop:Generator_UserColumnName="Entregues" type="xs:int" minOccurs="0" />
+              <xs:element name="idproduto" msprop:Generator_ColumnVarNameInTable="columnidproduto" msprop:Generator_ColumnPropNameInRow="idproduto" msprop:Generator_ColumnPropNameInTable="idprodutoColumn" msprop:Generator_UserColumnName="idproduto" type="xs:int" />
+              <xs:element name="idprincipio" msprop:Generator_ColumnVarNameInTable="columnidprincipio" msprop:Generator_ColumnPropNameInRow="idprincipio" msprop:Generator_ColumnPropNameInTable="idprincipioColumn" msprop:Generator_UserColumnName="idprincipio" type="xs:int" />
+              <xs:element name="Qtde_Edital" msprop:Generator_ColumnVarNameInTable="columnQtde_Edital" msprop:Generator_ColumnPropNameInRow="Qtde_Edital" msprop:Generator_ColumnPropNameInTable="Qtde_EditalColumn" msprop:Generator_UserColumnName="Qtde_Edital" type="xs:int" minOccurs="0" />
+              <xs:element name="Cliente" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_UserColumnName="Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nempenho" msprop:Generator_ColumnVarNameInTable="columnnempenho" msprop:Generator_ColumnPropNameInRow="nempenho" msprop:Generator_ColumnPropNameInTable="nempenhoColumn" msprop:Generator_UserColumnName="nempenho" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idedital" msprop:Generator_ColumnVarNameInTable="columnidedital" msprop:Generator_ColumnPropNameInRow="idedital" msprop:Generator_ColumnPropNameInTable="ideditalColumn" msprop:Generator_UserColumnName="idedital" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Pendencias" />
+      <xs:field xpath="mstns:idempenhoitems" />
+      <xs:field xpath="mstns:idmarca" />
+      <xs:field xpath="mstns:idproduto" />
+      <xs:field xpath="mstns:idprincipio" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
